@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vimvox.nepaliblog"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.vimvox.nepaliblog.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vimvox.nepaliblog.ArticleRead"
+            android:label="@string/title_activity_article_read" >
+        </activity>
+        <activity
+            android:name="com.vimvox.nepaliblog.SendEmail"
+            android:label="@string/title_activity_send_email" >
+        </activity>
+        <activity
+            android:name="com.vimvox.nepaliblog.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+    </application>
+
+</manifest>
